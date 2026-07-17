@@ -1,7 +1,7 @@
 title: Eutopia
 description: Serveur Vintage Story francophone.
 lang: fr
-url: ""
+url: "https://owenjuniusbrutus.github.io"
 baseurl: ""
 permalink: pretty
 
@@ -10,4 +10,4 @@ exclude:
   - Gemfile.lock
   - README.md
   - output
-
+  - vendor

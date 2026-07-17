@@ -1,26 +1,51 @@
 # Site Eutopia
 
-Site Jekyll destiné à GitHub Pages.
+Source Jekyll du site public : <https://owenjuniusbrutus.github.io/>.
 
-## Publication
+## Publication actuelle
 
-1. Créer un dépôt GitHub et placer **le contenu de ce dossier** à la racine du dépôt.
-2. Utiliser `main` comme branche par défaut, ou adapter la branche dans `.github/workflows/jekyll.yml`.
-3. Dans **Settings → Pages → Build and deployment**, sélectionner **GitHub Actions** comme source.
-4. Envoyer les fichiers sur GitHub. Le workflow construit puis publie le site automatiquement.
+GitHub Pages publie la branche `main`, dossier racine `/`. Il n'est pas nécessaire de sélectionner GitHub Actions : GitHub construit automatiquement les fichiers Jekyll présents sur cette branche.
 
-Les liens utilisent le filtre Jekyll `relative_url`. Le site fonctionne donc aussi bien sur un domaine utilisateur (`nom.github.io`) que dans un sous-chemin de dépôt (`nom.github.io/depot`). GitHub renseigne ce sous-chemin pendant la construction.
+Dans **Settings → Pages**, la source doit rester configurée ainsi :
 
-## Aperçu local avec Jekyll
+- **Deploy from a branch**
+- branche **main**
+- dossier **/(root)**
 
-Ruby et Bundler doivent être installés :
+## Installation locale
+
+Ruby 3.3 avec Devkit est installé dans `C:\Ruby33-x64`.
+
+Depuis ce dossier :
 
 ```powershell
+$env:Path = "C:\Ruby33-x64\bin;$env:Path"
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll build
 ```
 
-Ouvrir ensuite `http://localhost:4000`.
+Pour lancer un aperçu local :
+
+```powershell
+$env:Path = "C:\Ruby33-x64\bin;$env:Path"
+bundle exec jekyll serve --baseurl ""
+```
+
+Ouvrir ensuite <http://127.0.0.1:4000/>.
+
+## Mise à jour du site
+
+Après avoir modifié les fichiers :
+
+```powershell
+$env:Path = "C:\Ruby33-x64\bin;$env:Path"
+bundle exec jekyll build
+git add .
+git commit -m "Update Eutopia website"
+git push origin main
+```
+
+GitHub Pages reconstruit ensuite le site depuis `main`. L'état de la publication est visible dans **Settings → Pages** ou à l'adresse <https://github.com/OwenJuniusBrutus/OwenJuniusBrutus.github.io/deployments>.
 
 ## Structure
 
@@ -30,4 +55,3 @@ Ouvrir ensuite `http://localhost:4000`.
 - `guides/` : une page par guide.
 - `index.html` : page d'accueil.
 - `mod-list.html` : liste des mods.
-
