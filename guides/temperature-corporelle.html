@@ -1,0 +1,163 @@
+---
+layout: default
+title: "Température corporelle"
+description: "Guide de température corporelle du serveur Eutopia."
+nav: guides
+guide: temperature-corporelle
+permalink: /guides/temperature-corporelle/
+---
+<article class="guide-body">
+        <header class="page-header">
+          <h1>Température corporelle</h1>
+        </header>
+
+        <p><strong>Immersive Body Temperature</strong> rééquilibre la gestion de la température dans Vintage Story. L'objectif n'est pas d'augmenter artificiellement la difficulté, mais de rendre la survie estivale aussi exigeante que la survie hivernale. Les climats chauds ne sont plus une solution de facilité. Si vous surchauffez, votre vision deviendra anormalement lumineuse, vous ressentirez des vertiges, puis subirez des dégâts liés au coup de chaleur.</p>
+
+        <h2>Froid ❄️ et chaleur ☀️</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Climat</th>
+                <th>Prévention</th>
+                <th>Récupération</th>
+                <th>Conséquences et mécaniques</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="badge-froid">Froid ❄️</span></td>
+                <td>
+                  <ul>
+                    <li>Porter des vêtements en fourrure.</li>
+                    <li>Éviter l'eau et l'humidité.</li>
+                    <li>Porter un chapeau pour rester au sec sous la pluie.</li>
+                    <li>Se protéger du vent.</li>
+                    <li>Privilégier les abris.</li>
+                    <li>Manger des repas chauds.</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Se réchauffer près d'un feu.</li>
+                    <li>Rester dans des pièces bien isolées.</li>
+                    <li>Combiner un abri avec une source de chaleur.</li>
+                  </ul>
+                </td>
+                <td>Le vent a un impact beaucoup plus fort (refroidissement éolien). Marcher dans l'eau augmente l'humidité. Être exposé à la fois au vent et à l'eau est extrêmement punitif.</td>
+              </tr>
+              <tr>
+                <td><span class="badge-chaud">Chaleur ☀️</span></td>
+                <td>
+                  <ul>
+                    <li>Porter des vêtements légers.</li>
+                    <li>Ne pas se promener nu (se protéger du soleil).</li>
+                    <li>Porter un chapeau pour réduire l'exposition solaire.</li>
+                    <li>Éviter de porter des armures lourdes.</li>
+                    <li>Être prudent par temps chaud et humide.</li>
+                  </ul>
+                </td>
+                <td>
+                  <ul>
+                    <li>Retirer les vêtements excédentaires.</li>
+                    <li>Chercher de l'ombre.</li>
+                    <li>Se baigner pour se refroidir.</li>
+                    <li>Profiter du vent ou de la brise.</li>
+                  </ul>
+                </td>
+                <td>Les vêtements lourds et les armures génèrent de la chaleur. L'exposition à la chaleur augmente la température corporelle jusqu'au coup de chaleur, infligeant des dégâts sur la durée.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Qu'est-ce qui vous affecte&nbsp;?</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Modificateur</th>
+                <th>Effet</th>
+                <th>Explication</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Nager</strong></td>
+                <td><span class="badge-froid">Refroidit et récupération (chaleur)</span></td>
+                <td>Vous ne sentez pas le vent en nageant et les vêtements ne tiennent pas chaud dans l'eau. Vous ne subissez l'effet «&nbsp;mouillé&nbsp;» qu'une fois sorti de l'eau.</td>
+              </tr>
+              <tr>
+                <td><strong>Marcher dans l'eau</strong></td>
+                <td><span class="badge-froid">Refroidit et récupération (chaleur)</span></td>
+                <td>Vous accumulez seulement la moitié de l'humidité par rapport à la nage.</td>
+              </tr>
+              <tr>
+                <td><strong>Vent</strong></td>
+                <td><span class="badge-froid">Refroidit</span></td>
+                <td>L'air en mouvement augmente l'évaporation et la perte de chaleur corporelle.</td>
+              </tr>
+              <tr>
+                <td><strong>Hydratation</strong></td>
+                <td><span class="badge-froid">Refroidit</span></td>
+                <td>Uniquement actif si le mod <em>Hydrate or Diedrate</em> est installé.</td>
+              </tr>
+              <tr>
+                <td><strong>Ombrière (Shadehouse)</strong></td>
+                <td><span class="badge-froid">Refroidit</span></td>
+                <td>Uniquement actif si le mod <em>Shadehouses</em> est installé (-5°C).</td>
+              </tr>
+              <tr>
+                <td><strong>Sources de chaleur</strong></td>
+                <td><span class="badge-chaud">Réchauffe et récupération (froid)</span></td>
+                <td>Fours, fours à fosse, forges, lave... fournissent tous de la chaleur.</td>
+              </tr>
+              <tr>
+                <td><strong>Pièce et cave</strong></td>
+                <td><span class="badge-neutre">Neutre</span></td>
+                <td>Être à l'intérieur vous maintient à une température confortable, indépendamment des influences extérieures.</td>
+              </tr>
+              <tr>
+                <td><strong>Environnement</strong></td>
+                <td><span class="badge-neutre">Variable</span></td>
+                <td>Température ambiante autour de vous. Si vous nagez dans une eau à 12°C, la température de votre environnement devient 12°C.</td>
+              </tr>
+              <tr>
+                <td><strong>Espèce</strong></td>
+                <td><span class="badge-neutre">Variable</span></td>
+                <td>Dépend de la race choisie via le mod <em>Player Model Lib</em>.</td>
+              </tr>
+              <tr>
+                <td><strong>Vêtements</strong></td>
+                <td><span class="badge-chaud">Réchauffe</span></td>
+                <td>Fournissent de la chaleur. De bons vêtements d'été valent l'investissement pendant les canicules&nbsp;!</td>
+              </tr>
+              <tr>
+                <td><strong>Armure</strong></td>
+                <td><span class="badge-chaud">Réchauffe</span></td>
+                <td>Porter une armure par temps chaud augmentera drastiquement votre température corporelle.</td>
+              </tr>
+              <tr>
+                <td><strong>Serre (Greenhouse)</strong></td>
+                <td><span class="badge-chaud">Réchauffe</span></td>
+                <td>L'air y est plus chaud pour les plantes, et donc pour vous aussi (+5°C).</td>
+              </tr>
+              <tr>
+                <td><strong>Soleil direct</strong></td>
+                <td><span class="badge-chaud">Réchauffe</span></td>
+                <td>Une bénédiction dans le froid, une malédiction dans la chaleur. Le port du chapeau divise l'effet par deux par temps chaud.</td>
+              </tr>
+              <tr>
+                <td><strong>Courir (Sprinting)</strong></td>
+                <td><span class="badge-chaud">Réchauffe</span></td>
+                <td>L'effort physique génère de la chaleur. À éviter sous 35°C.</td>
+              </tr>
+              <tr>
+                <td><strong>Brûler</strong></td>
+                <td><span class="badge-chaud">Réchauffe</span></td>
+                <td>Astuce de survie extrême&nbsp;: prenez feu pour vous réchauffer très rapidement.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>

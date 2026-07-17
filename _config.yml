@@ -1,0 +1,13 @@
+title: Eutopia
+description: Serveur Vintage Story francophone.
+lang: fr
+url: ""
+baseurl: ""
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - output
+

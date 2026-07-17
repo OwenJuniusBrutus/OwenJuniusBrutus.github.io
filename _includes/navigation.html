@@ -1,0 +1,25 @@
+<aside class="site-sidebar">
+  <a class="site-brand" href="{{ '/' | relative_url }}">Eutopia</a>
+  <nav class="site-nav" aria-label="Navigation principale">
+    <ul>
+      <li><a href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} aria-current="page"{% endif %}>Home</a></li>
+      <li><a href="{{ '/mod-list/' | relative_url }}"{% if page.nav == 'mod-list' %} aria-current="page"{% endif %}>Mod list</a></li>
+      <li>
+        <details open>
+          <summary>Guides</summary>
+          <ul>
+            <li><a href="{{ '/guides/alchemy/' | relative_url }}"{% if page.guide == 'alchemy' %} aria-current="page"{% endif %}>Alchemy</a></li>
+            <li><a href="{{ '/guides/butchering/' | relative_url }}"{% if page.guide == 'butchering' %} aria-current="page"{% endif %}>Butchering</a></li>
+            <li><a href="{{ '/guides/land-claiming-group-gui/' | relative_url }}"{% if page.guide == 'land-claiming-group-gui' %} aria-current="page"{% endif %}>Land Claiming and Group GUI</a></li>
+            <li><a href="{{ '/guides/immersive-light/' | relative_url }}"{% if page.guide == 'immersive-light' %} aria-current="page"{% endif %}>Salty's Immersive: Light</a></li>
+            <li><a href="{{ '/guides/soap-lye-continued/' | relative_url }}"{% if page.guide == 'soap-lye-continued' %} aria-current="page"{% endif %}>Soap and Lye Continued</a></li>
+            <li><a href="{{ '/guides/tailors-delight/' | relative_url }}"{% if page.guide == 'tailors-delight' %} aria-current="page"{% endif %}>Tailor's Delight</a></li>
+            <li><a href="{{ '/guides/temperature-corporelle/' | relative_url }}"{% if page.guide == 'temperature-corporelle' %} aria-current="page"{% endif %}>Température corporelle</a></li>
+            <li><a href="{{ '/guides/vs-roofing-mod/' | relative_url }}"{% if page.guide == 'vs-roofing-mod' %} aria-current="page"{% endif %}>VS Roofing Mod</a></li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </nav>
+</aside>
+

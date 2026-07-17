@@ -1,0 +1,72 @@
+---
+layout: default
+title: "Salty's Immersive: Light"
+description: "Guide Salty's Immersive: Light du serveur Eutopia."
+nav: guides
+guide: immersive-light
+permalink: /guides/immersive-light/
+---
+<article class="guide-body">
+        <header class="page-header">
+          <h1>Salty's Immersive: Light</h1>
+        </header>
+    
+    <p><strong>Immersive: Light</strong> met fin à la lumière qui traverse magiquement les murs pleins. Ce mod exige que chaque bloc ait une "ligne de vue" directe vers la source lumineuse pour être éclairé. Ce n'est pas un simple shader visuel, il affecte la lumière réelle du jeu (apparition de monstres, etc.).</p>
+
+    <h2>Mécaniques d'Éclairage</h2>
+    <div class="table-wrap">
+          <table>
+        <thead>
+            <tr>
+                <th>Système</th>
+                <th>Statut</th>
+                <th>Fonctionnement</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Lumière des blocs</strong></td>
+                <td><span class="badge-green">Stable</span></td>
+                <td>Les torches, lanternes, etc., sont bloquées par les murs. Le mod est très bien optimisé : le calcul de lumière ne se fait <strong>qu'au moment où l'on pose ou casse</strong> une source lumineuse.</td>
+            </tr>
+            <tr>
+                <td><strong>Lumière du Soleil</strong></td>
+                <td><span class="badge-red">Alpha / Lourd</span></td>
+                <td>Modélise des rayons de soleil directionnels (ombres obliques). <em>Attention : C'est très gourmand en ressources, cause des coins très sombres, et relance des calculs à chaque heure en jeu.</em></td>
+            </tr>
+            <tr>
+                <td><strong>Lumière Dynamique</strong></td>
+                <td><span class="badge-gray">Vanilla</span></td>
+                <td>Le mod ne modifie pas la lumière tenue en main, il ne s'applique qu'aux blocs posés.</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+
+    <h2>Commandes de Débogage</h2>
+    <p>Utile pour visualiser ou réparer des erreurs de calcul de lumière (tapez <code>.ildebug [commande]</code>).</p>
+    <div class="table-wrap">
+          <table>
+        <thead>
+            <tr>
+                <th>Commande</th>
+                <th>Effet</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>rays on / off</strong></td>
+                <td>Affiche/masque des rayons colorés physiques de la lumière (Peut être intense visuellement, risque d'épilepsie).</td>
+            </tr>
+            <tr>
+                <td><strong>clear</strong></td>
+                <td>Efface la lumière moddée actuelle du chunk.</td>
+            </tr>
+            <tr>
+                <td><strong>legend</strong></td>
+                <td>Explique ce que signifient les couleurs des lignes de débogage.</td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+      </article>
